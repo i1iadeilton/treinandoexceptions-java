@@ -44,6 +44,10 @@ public class Program {
 		catch(DomainException e) {
 			System.out.println("Erros in reservation: " + e.getMessage());
 		}
+		//para o programa não parar devido a exceptions inesperadas
+		catch(RuntimeException e) {
+			System.out.println("Unespected error!");
+		}
 			
 		
 		
